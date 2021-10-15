@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+
+  background-image: url("images/sheikahBlue.jpeg");
+  background-size: 1400px auto;
+}
+
+@font-face {
+  font-family: botw;
+  src: url("fonts/BOTW.otf");
+}
+.intro {
+  display: flex;
+  justify-content: center;
+
+  font-family: botw;
+  letter-spacing: 4px;
+  color: #B99F65;
+  text-shadow: 2px 2px #F2DDAE;
+
+  font-size: 5em;
+  font-weight: 700;
+}
+.botw {
+  font-size: 3em;
+  padding-top: 50px;
+}
+.catalog {
+  margin-bottom: 100px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+.materialField {
+  font-size: 2em;
+  color: white;
+
+  background-color: #123859;
+
+  border: 0px solid #97E1FC;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.submitButton {
+  font-size: 2em;
+  color: white;
+  background-color: #062540;
+
+  border: 0px solid black;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+.submitButton:hover {
+  background-color: #F2DDAE;
+  color: #012136;
+}
+
+
+.materialResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 30px;
+  border: 0px solid #B4F3FF;
+
+  width: 70%;
+  margin: 40px auto;
+  background-color: rgba(6,18,28,.7);
+}
+.picture img {
+  border-radius: 20px;
+  border: 5px solid #184B78;
+}
+
+.label {
+  font-size: 1.8em;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  border-bottom: 3px solid #184B78;
+}
+.name {
+  font-size: 2.2em;
+}
+.description {
+  text-align: center;
+
+  width: 70%;
+  margin-top: 10px;
+}
+.bottom { /* hearts and effect labels */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.locations {
+  margin-bottom: 20px;
+}
+.info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.heartIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.fa-heart {
+  color: #F24B78;
+  margin: 0 1px;
+  font-size: 1.4em;
+}
+.half {
+  width: .5em;
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+
+  font-size: 1.2em;
+
+  margin-top: 200px;
+}
+.github {
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+
+  margin: 8px;
+}
+.github:hover {
+  color: tan;
+  text-decoration: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+
+  .intro {
+    font-size: 3.4em;
+  }
+  .botw {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+  }
+  .catalog {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .materialField {
+    font-size: 1.5em;
+  }
+  .submitButton {
+    font-size: 1.5em;
+  }
+
+  .picture img {
+    width: 80%;
+    height: auto;
+  }
+  .picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .label {
+    font-size: 1.2em;
+  }
+  .name {
+    font-size: 1.4em;
+  }
+
+  .description,
+  .location,
+  .info {
+    font-size: .8em;
+  }
+
+  .heartIcons {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 80%;
+  }
+
+}

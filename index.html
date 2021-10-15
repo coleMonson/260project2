@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="/styles.css">
+
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+  <script src="https://kit.fontawesome.com/5a3adc0222.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="page" class="page">
+
+    <div class="botw intro">Breath of the Wild</div>
+    <div class="catalog intro">material catalog</div>
+
+    <div class="input">
+      <input class="materialField" id="materialInput" type="text" placeholder="hello"></input><br />
+      <input class="submitButton" id="submit" type="submit" value="Search"></input>
+    </div>
+
+    <div class="materialResults" id="materialResults">
+    </div>
+
+    <div class="footer">
+      <a href="https://github.com/BYUCS260/weather-app-coleMonson"><i class="github fab fa-github"></i></a>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="/script.js">
+  </script>
+
+  <script>
+    const materialExamples = ["Voltfruit", "Hylian shroom", "Mighty thistle", "Spicy pepper", "Hydromelon", "Swift carrot"];
+    const random = Math.floor(Math.random() * materialExamples.length);
+    document.getElementById("materialInput").placeholder = materialExamples[random];
+  </script>
+
+</body>
+
+</html>
